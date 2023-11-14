@@ -1,6 +1,6 @@
-#تم كتابة السورس من قبل سورس الجوكر @jepthon
+#تم كتابة السورس من قبل سورس ليبيا توب @gggqgg
 #يمنع منعاً باتاً تاخذه وتنسبه لنفسك رجاءاً 
-#write By Hussein @lMl10l
+#write By Hussein @ggqgg
 import re
 import base64
 import asyncio
@@ -28,7 +28,7 @@ async def Hussein(event):
     await event.delete()
     parameters = re.split(r'\s+', event.text.strip(), maxsplit=2)
     if len(parameters) != 3:
-        return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️")
+        return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا 🇱🇾")
     seconds = int(parameters[1])
     chat_usernames = parameters[2].split()
     ha313so = event.client
@@ -40,7 +40,7 @@ async def Hussein(event):
             chat = await ha313so.get_entity(chat_username)
             await aljoker_nshr(ha313so, seconds, chat.id, message, seconds)  # تمرير قيمة seconds هنا لكل مجموعة
         except Exception as e:
-            await event.reply(f"⌔∮ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
+            await event.reply(f"⌔∮ 🇱🇾 لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
             )
         await asyncio.sleep(1)
     joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
@@ -65,7 +65,7 @@ async def aljoker_allnshr(ha313so, sleeptimet, message):
                 except Exception as e:
                     print(f"Error in sending message to chat {chat.id}: {e}")
         await asyncio.sleep(sleeptimet)
-@ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.نشر_كروبات (\d+)$"))
+@ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.نشر_قروبات (\d+)$"))
 async def Hussein(event):
     await event.delete()
     seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -73,7 +73,7 @@ async def Hussein(event):
     try:
         sleeptimet = int(seconds[0])
     except Exception:
-        return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️")
+        return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا 🇱🇾")
     ha313so = event.client
     global yaAli
     yaAli = True
@@ -109,7 +109,7 @@ async def Hussein(event):
     try:
         sleeptimet = int(seconds[0])
     except Exception:
-        return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا ⚠️")
+        return await event.reply("⌔∮ يجب استخدام كتابة صحيحة الرجاء التاكد من الامر اولا 🇱🇾")
     ha313so = event.client
     global yaAli
     yaAli = True
@@ -124,15 +124,15 @@ async def Hussein(event):
 async def stop_aljoker(event):
     global yaAli
     yaAli = False
-    await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
+    await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح 🇱🇾** ")
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.(الاوامر|فحص)$"))
 async def Hussein(event):
     await event.delete()
     if event.pattern_match.group(1) == "الاوامر":
         joker_313 = """**
-🤡 قـائمة اوامر النشر التلقائي للمجموعات
+        🇱🇾 قـائمة اوامر النشر التلقائي المجموعات
 
-===== 🅐🅛🅙🅞🅚🅔🅡 =====
+===== ليبيا توب 🇱🇾 =====
 
 `.نشر` عدد الثواني معرف الكروب :
  - للنشر في المجموعة التي وضعت معرفها مع عدد الثواني
@@ -148,7 +148,7 @@ async def Hussein(event):
 
 • مُـلاحظة : جميع الأوامر اعلاه تستخدم بالرد على الرسالة او الكليشة المُراد نشرها
 
-===== 🅐🅛🅙🅞🅚🅔🅡 =====
+===== STAR @GGQGG =====
     **"""
         await event.reply(file='https://telegra.ph/file/a9ab192d3196e014ee015.jpg', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
@@ -160,5 +160,5 @@ async def Hussein(event):
             await event.client(joker)
         except BaseException:
             pass
-print('تم تشغيل نشر التلقائي لسورس الجوكر')
+print ( 'تم تشغيل نشر التلقائي لسورس ليبيا توب')
 ha313so.run_until_disconnected()
